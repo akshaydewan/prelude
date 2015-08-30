@@ -132,4 +132,13 @@ by Prelude.")
  ;; greet the use with some useful tip
  (run-at-time 5 nil 'prelude-tip-of-the-day))
 
+;; Disable zenburn
+(disable-theme 'zenburn)
+
+;; Set font
+(when (eq system-type 'darwin)
+  (set-default-font "Anonymous-Pro-18"))
+(when (eq system-type 'windows-nt)
+  (set-frame-font "consolas-14"))
+
 ;;; init.el ends here
